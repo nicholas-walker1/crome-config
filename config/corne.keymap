@@ -57,7 +57,7 @@
 // |       |  F1  |  F2  |  F3   |  F4   |     F5     |   |  F6  | F7  |  F8  | F9    | F10  | CTRL |
 // |       | Prev | Next | Vol - | Vol + | Play/Pause |   | LFT  | DWN |  UP  | RGT   |      | ALT  |
 // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |     BT5    |   | UNDO | CUT | COPY | PASTE | REDO | DEL  |
-//                |      |       |       |            |   |      |      |      |
+//                |      |       |       |            |   |      |     |      |
                         bindings = <
    &trans     &kp F1        &kp F2       &kp F3       &kp F4       &kp F5         &kp F6     &kp F7    &kp F8     &kp F9      &kp F10    &kp RCTRL
    &trans     &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP       &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT   &trans     &kp RALT
