@@ -49,7 +49,7 @@
             bindings = <
                 &kp ESC   &kp EXCL  &kp AT    &kp HASH  &kp LPAR  &kp RPAR  &kp PLUS  &kp N7    &kp N8    &kp N9    &kp LT    &kp GT
                 &kp GRAVE &kp DLLR  &kp PRCNT &kp CARET &kp LBKT  &kp RBKT  &kp MINUS &kp N4    &kp N5    &kp N6    &trans    &kp SQT
-                &kp TILDE &kp AMPS  &kp STAR  &kp UNDER &kp LBRC  &kp RBRC  &kp BSLH  &kp N1    &kp N2    &kp N3    &kp FSLH  &kp APOS
+                &kp TILDE &kp AMPS  &kp STAR  &kp UNDER &kp LBRC  &kp RBRC  &kp BSLH  &kp N1    &kp N2    &kp N3    &kp FSLH  &kp DQT
                             &kp LGUI  &trans    &kp RET   &kp EQUAL &kp DOT   &kp N0
             >;
         };
