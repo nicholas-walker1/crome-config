@@ -41,14 +41,14 @@
 
         layer_1 { 
             // Lower layer (previously layer_below)
-            // ---------------------------------------------------------
-            // | ESC | ! | @ | # | ( | ) |     | + | 7 | 8 | 9 | < | > |
-            // | `   | $ | % | ^ | [ | ] |     | - | 4 | 5 | 6 |   | ' |
-            // | ~   | & | * | _ | { | } |     | \ | 1 | 2 | 3 | / | " |
+            // -----------------------------------------------------------
+            // | ESC | ! | @ | # | ( | ) |     | + | 7 | 8 | 9 | <   | > |
+            // | `   | $ | % | ^ | [ | ] |     | - | 4 | 5 | 6 | DEL | ' |
+            // | ~   | & | * | _ | { | } |     | \ | 1 | 2 | 3 | /   | " |
             //          | GUI |   | ENT  |     | = | . | 0 |
             bindings = <
                 &kp ESC   &kp EXCL  &kp AT    &kp HASH  &kp LPAR  &kp RPAR  &kp PLUS  &kp N7    &kp N8    &kp N9    &kp LT    &kp GT
-                &kp GRAVE &kp DLLR  &kp PRCNT &kp CARET &kp LBKT  &kp RBKT  &kp MINUS &kp N4    &kp N5    &kp N6    &trans    &kp SQT
+                &kp GRAVE &kp DLLR  &kp PRCNT &kp CARET &kp LBKT  &kp RBKT  &kp MINUS &kp N4    &kp N5    &kp N6    &kp DEL   &kp SQT
                 &kp TILDE &kp AMPS  &kp STAR  &kp UNDER &kp LBRC  &kp RBRC  &kp BSLH  &kp N1    &kp N2    &kp N3    &kp FSLH  &kp DQT
                             &kp LGUI  &trans    &kp RET   &kp EQUAL &kp DOT   &kp N0
             >;
