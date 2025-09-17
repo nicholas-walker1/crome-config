@@ -25,44 +25,44 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -------------------------------------------------------------------------------------------------
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I   |  O  |  P  |  \   |
-// | CAPS |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K   |  L  |  ;  | "|"  |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,   |  .  |  /  | SHFT |
-//                    | GUI | LWR | ENT |   | SPC | RSE | BKSP |
+// --------------------------------------------------------------
+// | TAB  | Q | W | E | R | T |     | Y | U | I  | O | P | "|"  |
+// | CAPS | A | S | D | F | G |     | H | J | K  | L | ; | :    |
+// | SHFT | Z | X | C | V | B |     | N | M | ,  | . | ? | SHFT |
+//          | GUI | LWR | ENT |     | SPC | RSE | BKSP |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E    &kp R &kp T     &kp Y     &kp U  &kp I     &kp O   &kp P    &kp BSLH
-   &kp CAPS  &kp A &kp S &kp D    &kp F &kp G     &kp H     &kp J  &kp K     &kp L   &kp SEMI &kp PIPE
-   &kp LSHFT &kp Z &kp X &kp C    &kp V &kp B     &kp N     &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                         &kp LGUI &mo 1 &kp RET   &kp SPACE &mo 2  &kp BSPC
+   &kp TAB   &kp Q &kp W &kp E    &kp R &kp T       &  kp Y     &kp U  &kp I     &kp O   &kp P     &kp PIPE
+   &kp CAPS  &kp A &kp S &kp D    &kp F &kp G       &  kp H     &kp J  &kp K     &kp L   &kp SEMI  &kp COLON
+   &kp LSHFT &kp Z &kp X &kp C    &kp V &kp B       &  kp N     &kp M  &kp COMMA &kp DOT &kp QMARK &kp RSHFT
+                         &kp LGUI &mo 1 &kp RET     &  kp SPACE &mo 2  &kp BSPC
                         >;
                 };
 
                 layer_below {
-// -------------------------------------------------------------------------------------------------
-// |  `   |  !  |  @  |  #  |  $  |  %   |   |  ^  |  &   |  *   |  (  |  )  |  '  |
-// | ESC  |  1  |  2  |  3  |  4  |  5   |   |  -  |  =   |  '   |  [  |  ]  |  "  |
-// | SHFT |  6  |  7  |  8  |  9  |  0   |   |  _  |  +   |  ~   |  {  |  }  |  ?  |
-//                    | GUI |     | ENT  |   | SPC |      | BKSP |
+// ---------------------------------------------------------
+// | ESC | ! | @ | # | ( | ) |     | + | 7 | 8 | 9 | < | > |
+// | `   | $ | % | ^ | [ | ] |     | - | 4 | 5 | 6 |   | ' |
+// | ~   | & | * | _ | { | } |     | \ | 1 | 2 | 3 | / | " |
+//          | GUI |   | ENT  |     | = | . | 0 |
                         bindings = <
-   &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR  &kp LPAR &kp RPAR &kp SQT
-   &kp ESC   &kp N1   &kp N2 &kp N3   &kp N4   &kp N5      &kp MINUS &kp EQUAL &kp SQT   &kp LBKT &kp RBKT &kp APOS
-   &kp LSHFT &kp N6   &kp N7 &kp N8   &kp N9   &kp N0      &kp UNDER &kp PLUS  &kp TILDE &kp LBRC &kp RBRC &kp QMARK
-                             &kp LGUI &trans   &kp RET     &tp SPACE &trans    &kp BSPC
-                        >;
+   &kp ESC   &kp EXCL &kp AT    &kp HASH  &kp LPAR &kp RPAR     &kp PLUS  &kp N7  &kp N8 &kp N9 &kp LT   &kp GT
+   &kp GRAVE &kp DLLR &kp PRCNT &kp CARET &kp LBKT &kp RBKT     &kp MINUS &kp N4  &kp N5 &kp N6 &trans   &kp SQT
+   &kp TILDE &kp AMPS &kp STAR  &kp UNDER &kp LBRC &kp RBRC     &kp BSLH  &kp N1  &kp N2 &kp N3 &kp FSLH &kp APOS
+                                &kp LGUI  &trans   &kp RET      &kp EQUAL &kp DOT &kp N0 
+                            >;
                 };
 
                 layer_above {
-// ---------------------------------------------------------------------------------------------------
-// |       |  F1  |  F2  |  F3   |  F4   |     F5     |   |  F6  | F7  |  F8  | F9    | F10  | CTRL |
-// |       | Prev | Next | Vol - | Vol + | Play/Pause |   | LFT  | DWN |  UP  | RGT   |      | ALT  |
-// | BTCLR | BT1  | BT2  |  BT3  |  BT4  |     BT5    |   | UNDO | CUT | COPY | PASTE | REDO | DEL  |
-//                |      |       |       |            |   |      |     |      |
+// --------------------------------------------------------------------------------------------
+// | F1    | F2   | F3   | F4   | F5   | F6   |     | F7  | F8   | F9    | F10   | F11  | F12 |
+// | CTRL  | Prev | Next | Vol- | Vol+ | Play |     | LFT | DWN  | UP    | RGT   | UNDO | ALT |
+// | BTCLR | BT1  | BT2  | BT3  | BT4  | BT5  |     | CUT | COPY | PASTE |       | REDO | DEL |
+//                       |      |      |      |     |     |      |       |
                         bindings = <
-   &trans     &kp F1        &kp F2       &kp F3       &kp F4       &kp F5         &kp F6     &kp F7    &kp F8     &kp F9      &kp F10    &kp RCTRL
-   &trans     &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP       &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT   &trans     &kp RALT
-   &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &kp K_REDO &kp DEL
-                                         &trans       &trans       &trans         &trans     &trans    &trans
+   &kp F1     &kp F2        &kp F3       &kp F4       &kp F5       &kp F6           &kp F7    &kp F8     &kp F9      &kp F10   &kp F11    &kp F12
+   &kp LCTRL  &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP         &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT &kp K_UNDO &kp RALT
+   &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp K_CUT &kp K_COPY &kp K_PASTE &trans    &kp K_REDO &kp DEL
+                                         &trans       &trans       &trans           &trans    &trans     &trans
                         >;
                 };
         };
